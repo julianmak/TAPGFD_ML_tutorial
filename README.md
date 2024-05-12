@@ -16,7 +16,7 @@ There there are at least three known ways of running these:
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/julianmak/TAPGFD_ML_tutorial/blob/main/) (requires Google login)
 
-Then we need to mount the drive and point to the data, something like
+Then you need to expose the data accordingly so that the cloud instance can read the data, which most likely will require a separate upload of the downloaded data above. Once the data is up on the cloud, you'll need to mount the drive and point to the data, something like:
 
 ```
 from google.colab import drive
