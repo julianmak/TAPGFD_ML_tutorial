@@ -1,8 +1,8 @@
 # TAPGFD_ML_tutorial
 
-Tutorial material for the ICTS TAGFD program (https://www.icts.res.in/program/TAPGFD). 
+Tutorial material for the ICTS TAGFD program (https://www.icts.res.in/program/TAPGFD). With code/material/memes contributed by Fei Er Yan [@Decenov](https://www.github.com/Decenov) and Han Wang [@hannnwang](https://www.github.com/hannnwang).
 
-Step zero is that you need the data. I've been lazy and just uploaded the pack onto a Google Drive, which you can access [here](https://drive.google.com/drive/folders/1JJ0cpshu6-JE8wp93UsHuqy6V33rQy7s?usp=sharing). You'll need to download the whole pack for the above, see picture below.
+Step zero is to get the data. I've been lazy and just uploaded an Argo pack onto a Google Drive, which you can access [here](https://drive.google.com/drive/folders/1JJ0cpshu6-JE8wp93UsHuqy6V33rQy7s?usp=sharing). You'll need to download the whole pack for the above, see picture below.
 
 ![Google Drive pointer](https://i.imgur.com/QLpt4MM.png)
 
@@ -23,3 +23,5 @@ from google.colab import drive
 drive.mount('/content/drive')
 data = xr.open_zarr("/path/to/folder/GLOB_HOMOGENEOUS_variables.zarr/")
 ```
+
+See the included notebook for related codes.
