@@ -40,6 +40,8 @@
 \setbeamerfont{title like}{shape=\scshape}
 %\setbeamerfont{frametitle}{shape=\scshape}
 
+\setbeamertemplate{footline}[frame number]
+
 \setbeamercolor*{lower separation line head}{bg=ust-blue} 
 \setbeamercolor*{normal text}{fg=black,bg=white} 
 \setbeamercolor*{alerted text}{fg=red} 
@@ -170,7 +172,7 @@ the aim is to seek $f$ such that we minimise something like
 
 \begin{frame}{Training, Validation, Testing data}
 
-Normally split $(X, y)$ into
+Normally split $(X, Y)$ into
 \begin{itemize}
   \item \structure{training data} ($X_{\rm train}, Y_{\rm train}$) {\tiny (most
   data should be here)}
@@ -253,9 +255,9 @@ Normally split $(X, y)$ into
 \begin{frame}{Oceanographic examples}
 
 \begin{figure}
-  \includegraphics[width=\textwidth]{Andersson_et_al_2021_fig7}
-  \caption{From Andersson \emph{et al}. (2021), Fig. 7. Convolutional Neural
-  Network to predict sea ice coverage.}
+  \includegraphics[width=0.8\textwidth]{Maze_et_al_2017_fig4}
+  \caption{From Maze \emph{et al}. (2017), Fig. 4. Gaussian Mixture Model to
+  identify watermass clusters from Argo data in Atlantic.}
 \end{figure}
 
 \end{frame}
@@ -265,9 +267,9 @@ Normally split $(X, y)$ into
 \begin{frame}{Oceanographic examples}
 
 \begin{figure}
-  \includegraphics[width=0.8\textwidth]{Maze_et_al_2017_fig4}
-  \caption{From Maze \emph{et al}. (2017), Fig. 4. Gaussian Mixture Model to
-  identify watermass clusters from Argo data in Atlantic.}
+  \includegraphics[width=\textwidth]{Andersson_et_al_2021_fig7}
+  \caption{From Andersson \emph{et al}. (2021), Fig. 7. Convolutional Neural
+  Network to predict sea ice coverage.}
 \end{figure}
 
 \end{frame}
@@ -515,7 +517,7 @@ Normally split $(X, y)$ into
   \item $k$-means in $TS$-space really
   \item some physical rationalisation possible
   \item[]
-  \item[!!!] didn't standardise data here {\tiny (probably should have)}
+  \item[!!!] didn't normalise data here {\tiny (probably should have)}
 \end{itemize}
 
 \end{frame}
@@ -534,7 +536,7 @@ Normally split $(X, y)$ into
   \item GMM used in oceanography before {\tiny (e.g. Jones \emph{et al.}, 2019,
   in Southern Ocean)}
   \item[]
-  \item[!!!] didn't standardise data here {\tiny (probably should have)}
+  \item[!!!] didn't normalise data here {\tiny (probably should have)}
 \end{itemize}
 
 \end{frame}
@@ -563,7 +565,7 @@ Normally split $(X, y)$ into
 
 \begin{itemize}
   \item linear regression?
-  \item[] $\to$ standardise data
+  \item[] $\to$ normalise data {\tiny (Z-score)}
   \item[] $\to$ train with training data {\tiny (could in principle use everything)}
 \end{itemize}
 
@@ -607,7 +609,7 @@ Normally split $(X, y)$ into
 
 \begin{itemize}
   \item train model with training and validation data
-  \item[] $\to$ data has been standardised here
+  \item[] $\to$ data has been normalised here
   \item model trained over 30 \structure{epochs}
   \item[] $\to$ think 30 complete passes/iterations
 \end{itemize}
