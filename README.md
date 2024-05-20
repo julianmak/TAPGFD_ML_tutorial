@@ -20,24 +20,26 @@ I would highly recommend you don't use the temporary instance, and instead do th
 
 a) upper left of screen, "File -> Save a copy in Drive" (which will then open another window probably, but now the copy should be in your account)
 
-b) now in your own Google account somewhere, upload the data folder from step 0 (don't zip, upload the whole folder)
+b) now in your own Google Drive somewhere, upload the data folder from step 0 (don't zip, upload the whole folder)
 
-c) do a mount of your Google drive as below
+c) do a mount of your Google drive by adding the following code in the Notebook:
 
 ```
 from google.colab import drive
 drive.mount('/content/drive')
 
 ```
+When running this step, Google will likely ask you for permissions -- please give it access. If this step is successful, you should see somthing like "Mounted at /content/drive" in the response.
 
-Find the path of the folder, and make a note of the path (see diagram below; mine happens to be somewhere else)
+
+Find the path of the data folder, and take a note of the path (see diagram below; mine happens to be somewhere else)
 
 ![Google Drive folder path](https://i.imgur.com/GIJ7Kna.png)
 
-Then you change the load path accordingly, as below.
+Then you change the load path accordingly, in this command that is in the notebook:
 
 ```
 data = xr.open_zarr("/path/to/folder/GLOB_HOMOGENEOUS_variables.zarr/")
 ```
 
-There are other things that could fail; see the included notebook for related codes.
+There are also some other things that you need to pay attention to if running on Colab. See the included notebook for related codes.
