@@ -14,7 +14,7 @@ There there are at least three known ways of running these:
 
 3) Via Google colab, but read everything below first! You will need to pull and upload copies code and data accordingly. If you click the "Colab" button below it will open a temporary instance (that is not saved):
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/julianmak/TAPGFD_ML_tutorial/blob/main/) (requires Google login)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/julianmak/TAPGFD_ML_tutorial/blob/main/TAPGFD_ML_tutorial.ipynb) (requires Google login)
 
 I would highly recommend you don't use the temporary instance, and instead do this through your own Google drive (reasons to be elaborated on). For that, you need a Google account. Supposing you have it, then first, in the temporary instance:
 
