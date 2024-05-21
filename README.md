@@ -18,7 +18,7 @@ There there are at least three known ways of running these:
 
 Now in your own Google Drive somewhere, upload the data folder from step zero (don't zip, just upload the whole .zarr folder)
 
-Then mount the contents in your Google drive to your instance by adding the following code in the Notebook:
+When you are in the instance on Google Colab, mount the contents in your Google drive to your instance by adding the following code in the Notebook:
 
 ```
 from google.colab import drive
